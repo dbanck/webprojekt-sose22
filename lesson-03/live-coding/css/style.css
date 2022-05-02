@@ -1,0 +1,19 @@
+header {
+  background-color: darkcyan;
+}
+
+body {
+  background-color: lightgray;
+  font-size: 20px;
+}
+
+img {
+  height: 250px;
+
+  border: 2px solid red;
+  /* lange variante
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  */
+}
