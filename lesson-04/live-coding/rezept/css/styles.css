@@ -31,3 +31,15 @@ a {
 img {
   width: 300px;
 }
+
+.text-blue {
+  color: blue;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: red;
+}

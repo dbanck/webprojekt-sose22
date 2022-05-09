@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  font-family: sans-serif;  
+  font-family: sans-serif;    
 }
 
 header {
@@ -23,14 +23,23 @@ p {
   margin-bottom: 50px;
 }
 
+.line {
+  /* text-decoration: line-through;
+  color: red; */
+}
+
+#ingredient-list {
+  background-color: #c5ee9f;
+}
+
+#my-id {
+  /* font-size: 30px; */
+}
 
 
-
-
-
-
-
-
+ul li strong {
+  color: red;
+}
 
 
 
