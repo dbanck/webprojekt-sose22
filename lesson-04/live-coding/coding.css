@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  font-family: sans-serif;    
+  font-family: sans-serif;  
 }
 
 header {
@@ -43,13 +43,24 @@ ul li strong {
 
 
 
+#blue {
+  color: blue;
+}
 
 
+div { 
+  color: green;
+  font-size: 20px;
+}
 
+.blue {
+  color: blue;
+  font-weight: bold;
+}
 
-
-
-
+.red {
+  color: red;
+}
 
 
 
@@ -146,6 +157,17 @@ ul li strong {
 
 .boxmodell {
   background: red;
+
+  width: 200px;
+  height: 200px;
+
+  padding: 50px;
+
+  /* border: 10px solid green; */
+  border-radius: 200;
+
+  margin: 50px;
+  margin-bottom: 0px;
 }
 
 
