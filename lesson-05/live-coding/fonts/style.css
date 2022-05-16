@@ -3,15 +3,15 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 32px;
   line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  font-family: "Kristi", cursive;
 }
 
 h1,
 h2 {
+  font-family: "Rubik Mono One", sans-serif;
   color: #6b6b6b;
-  font-family: "Pacifico", cursive;
 }
 
 .content {
@@ -36,4 +36,19 @@ h2 {
 
 .content .col:nth-child(even) {
   padding-right: 0;
+}
+
+.test {
+  width: 223px;
+  height: 208px;
+
+  background: #c4c4c4;
+  border: 9px solid #000000;
+  box-shadow: 22px 8px 6px 9px rgba(224, 30, 30, 0.25);
+  border-radius: 50px;
+  transform: rotate(-14.05deg);
+}
+
+svg path {
+  fill: red;
 }
