@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+}
+
+header .main-nav {
+  display: flex;
+  gap: 40px;
+  align-items: baseline;
+}
+
+ul {
+  margin: 0;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav li {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  transition: border-color 70ms ease-in-out;
+  cursor: pointer;
+}
+
+nav li:hover {
+  border-color: currentColor;
+}
+
+nav li.more::after {
+  content: "ᐯ";
+  margin-left: 7px;
+  transform: scaleY(0.6) translateY(2px);
+  display: inline-block;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 100px 70px;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.footer-flex div {
+  width: 60%;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.footer-flex ul {
+  flex-wrap: wrap;
+}
