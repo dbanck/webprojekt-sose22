@@ -18,6 +18,8 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="function.js"></script>
   </head>
   <body>
     <header>
@@ -56,36 +58,42 @@
                 class="preview-active"
                 src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Coffee art"
+                onclick="enlarge(this)"
               />
             </li>
             <li>
               <img
                 src="https://images.pexels.com/photos/2858192/pexels-photo-2858192.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Coffee latte in black mug"
+                onclick="enlarge(this)"
               />
             </li>
             <li>
               <img
                 src="https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Cafe latte"
+                onclick="enlarge(this)"
               />
             </li>
             <li>
               <img
                 src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Photo of Hand Holding a Filled Cup Latte"
+                onclick="enlarge(this)"
               />
             </li>
             <li>
               <img
                 src="https://images.pexels.com/photos/4927239/pexels-photo-4927239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="A Close-up Shot of a Person Making a Latte Art"
+                onclick="enlarge(this)"
               />
             </li>
           </ul>
 
           <div>
             <img
+              id="large-image"
               class="large"
               src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Coffee art"
@@ -106,7 +114,9 @@
             </div>
 
             <div class="field-container">
-              <button type="submit" disabled>Sold Out</button>
+              <button type="submit" onclick="openSignupModal()">
+                Sold Out
+              </button>
             </div>
           </div>
         </div>
@@ -192,9 +202,9 @@
       <div>© 2022 Fake Shop</div>
     </footer>
 
-    <div class="overlay">
+    <div class="overlay" id="modal">
       <div class="modal-content">
-        <button class="modal-closer">x</button>
+        <button class="modal-closer" onclick="closeSignupModal()">x</button>
         <h3>
           We are refilling stocks. Sign up for your personal email reminder
         </h3>
@@ -205,12 +215,19 @@
         </p>
 
         <div class="field-container">
-          <input type="email" placeholder="Your email..." id="email" />
+          <input
+            type="email"
+            placeholder="Your email..."
+            id="email"
+            oninput="validateEmail()"
+          />
         </div>
-        <div></div>
+        <div id="email-error" class="error"></div>
 
         <div class="field-container">
-          <button type="submit">Remind me</button>
+          <button type="submit" onclick="signup()" id="signup-btn" disabled>
+            Remind me
+          </button>
         </div>
       </div>
     </div>

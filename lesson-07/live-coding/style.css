@@ -236,7 +236,7 @@ button:disabled {
   background: #ccc;
 }
 
-#email-error {
+.error {
   text-align: right;
   color: #ac0b0b;
   font-weight: 500;
