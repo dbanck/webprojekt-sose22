@@ -14,8 +14,8 @@ Hier findet ihr alle Materialien, die wir euch zur Verfügung stellen möchten. 
 - [**Lektion 04: CSS**](https://github.com/dbanck/webprojekt-sose22/tree/main/lesson-04) - Schönheit 2.0
 - [**Lektion 05: Webentwicklung angewandt**](https://github.com/dbanck/webprojekt-sose22/tree/main/lesson-05) - Wie arbeitet ein Webentwickler?
 - [**Lektion 06: JS I**](https://github.com/dbanck/webprojekt-sose22/tree/main/lesson-06) - Wenn dies, dann das
-- Lektion 07: JS II - Wenn dies, dann das
-- Lektion 08: Responsive Webdesign - Make it fit
+- [**Lektion 07: JS II**](https://github.com/dbanck/webprojekt-sose22/tree/main/lesson-07) - Wenn dies, dann das
+- [**Lektion 08: Responsive Webdesign**](https://github.com/dbanck/webprojekt-sose22/tree/main/lesson-08) - Make it fit
 - Lektion 09: CSS Frameworks & Projektarbeit - Stein auf Stein
 - Lektion 10: Projektarbeit & QnA
 - Lektion 11: Präsentationen
